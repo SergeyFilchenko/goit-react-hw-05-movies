@@ -3,7 +3,7 @@ import axios from 'axios';
 export const IMAGE_URL = 'https://image.tmdb.org/t/p/w500';
 
 axios.defaults.baseURL = 'https://api.themoviedb.org/3';
-const APi_KEY = 'cdd27e005bd8c0d816b6c6c875eecf17';
+const APi_KEY = '191efeeb865bc4c787fee73d3a367440';
 
 export async function getTrending() {
   const response = await axios.get(`/trending/all/week?api_key=${APi_KEY}`);
