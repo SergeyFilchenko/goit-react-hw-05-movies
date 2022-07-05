@@ -20,7 +20,7 @@ function App() {
               <Route path="cast" element={<CastView />} />
               <Route path="reviews" element={<ReviewsView />} />
             </Route>
-            <Route path="*" element={<Navigate to="/" />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Route>
         </Routes>
       </Suspense>
